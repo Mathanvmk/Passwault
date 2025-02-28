@@ -47,7 +47,7 @@
         .container {
             display: flex;
             justify-content: space-between;
-            width: 80%;
+            width: 90%;
             max-width: 1200px;
             padding: 20px;
             gap: 30px;
@@ -191,8 +191,36 @@
             .button {
                 font-size: 16px;
             }
+
+            /* Adjust input width for small screens */
+            .form-group input {
+                font-size: 14px;
+                padding: 10px;
+            }
         }
 
+        /* Adjusting for extra small screens */
+        @media (max-width: 600px) {
+            .passvault {
+                font-size: 24px;
+                top: 10px;
+                left: 10px;
+            }
+
+            .done-by {
+                font-size: 14px;
+                top: 10px;
+                right: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .button {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
